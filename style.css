@@ -16,5 +16,78 @@ button {
 }
 button:hover {
     background-color: #45a049;
+
+
+solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Força o alinhamento central */
+  gap: 30px; /* Reduz o espaço para agrupar a foto mais perto das abas */
+  height: 44px;
+  padding: 0;
+  margin: 0 auto;
+
+  }
+
+/* Barra de Navegação Estilo Apple */
+
+.navbar {
+  width: 100%;
+  background-color: rgba(15, 45, 36, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  }
+
+.nav-logo img {
+  height: 20px;
+  width: auto;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+body {
+  padding-top: 44px;
 }
 
