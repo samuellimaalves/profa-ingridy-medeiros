@@ -1,40 +1,28 @@
+/* Estilos Gerais */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0f2d24;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 50px;
+  font-family: Arial, sans-serif;
+  background-color: #0f2d24;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding-top: 44px;
 }
+
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
 button:hover {
-    background-color: #45a049;
-
-
-solid rgba(255, 255, 255, 0.1);
+  background-color: #45a049;
 }
-
-.nav-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Força o alinhamento central */
-  gap: 30px; /* Reduz o espaço para agrupar a foto mais perto das abas */
-  height: 44px;
-  padding: 0;
-  margin: 0 auto;
-
-  }
 
 /* Barra de Navegação Estilo Apple */
-
 .navbar {
   width: 100%;
   background-color: rgba(15, 45, 36, 0.85);
@@ -47,47 +35,46 @@ solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 44px;
+  padding: 0 20px;
+}
+
+/* Foto de Perfil */
+.nav-logo img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Lista de Links da Navbar */
 .nav-container ul {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 30px;
   margin: 0;
   padding: 0;
   list-style: none;
-
-  }
-
-.nav-logo img {
-  height: 20px;
-  width: auto;
-  display: block;
-  border-radius: 50%;
-  object-fit: cover;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 36px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a {
+.nav-container ul li a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
-  letter-spacing: -0.01em;
   transition: color 0.2s ease;
 }
 
-.nav-links a:hover {
+.nav-container ul li a:hover {
   color: #ffffff;
-}
-
-body {
-  padding-top: 44px;
 }
 
