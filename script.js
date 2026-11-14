@@ -1,9 +1,13 @@
-const botao = document.getElementById("meuBotao");
+document.addEventListener('DOMContentLoaded', () => {
+  // Alerta do botão do YouTube
+  const botao = document.getElementById("meuBotao");
+  if (botao) {
+    botao.addEventListener("click", function() {
+      alert("A página no YouTube foi aberta em outra aba!");
+    });
+  }
 
-botao.addEventListener("click", function() {
-    alert("A página no YouTube foi aberta em outra aba!");
-
-	document.addEventListener('DOMContentLoaded', () => {
+  // Abre e fecha o menu mobile
   const toggleBtn = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
 
@@ -12,4 +16,4 @@ botao.addEventListener("click", function() {
       navLinks.classList.toggle('active');
     });
   }
-	});
+});

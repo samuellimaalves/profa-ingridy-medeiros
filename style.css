@@ -5,10 +5,11 @@ body {
   color: #ffffff;
   text-align: center;
   margin: 0;
-  padding-top: 44px;
+  padding-top: 60px;
 }
 
-button {
+/* Estilo apenas para o botão do YouTube (não afeta o menu) */
+.btn-youtube {
   padding: 10px 20px;
   font-size: 16px;
   background-color: #4CAF50;
@@ -18,7 +19,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.btn-youtube:hover {
   background-color: #45a049;
 }
 
@@ -45,9 +46,16 @@ button:hover {
   gap: 40px;
   height: 44px;
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
 /* Foto de Perfil */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
 .nav-logo img {
   width: 32px;
   height: 32px;
@@ -57,7 +65,7 @@ button:hover {
 }
 
 /* Lista de Links da Navbar */
-.nav-container ul {
+.nav-container ul.nav-links {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -66,7 +74,7 @@ button:hover {
   list-style: none;
 }
 
-.nav-container ul li a {
+.nav-container ul.nav-links li a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-size: 13px;
@@ -74,26 +82,27 @@ button:hover {
   transition: color 0.2s ease;
 }
 
-.nav-container ul li a:hover {
+.nav-container ul.nav-links li a:hover {
   color: #ffffff;
+}
 
-  /* Botão de duas linhas (Oculto no computador) */
+/* Botão de duas linhas (Oculto no computador) */
 .menu-toggle {
   display: none;
-  background: none;
+  background: transparent;
   border: none;
   cursor: pointer;
   flex-direction: column;
   justify-content: space-between;
-  width: 22px;
-  height: 14px;
+  width: 20px;
+  height: 10px;
   padding: 0;
 }
 
 .menu-toggle span {
   display: block;
   width: 100%;
-  height: 2px;
+  height: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
 }
@@ -116,11 +125,11 @@ button:hover {
     top: 44px;
     left: 0;
     width: 100%;
-    background-color: rgba(15, 45, 36, 0.95);
+    background-color: rgba(15, 45, 36, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    padding: 20px 0;
-    gap: 20px;
+    padding: 25px 0;
+    gap: 22px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
@@ -128,4 +137,3 @@ button:hover {
     display: flex;
   }
 }
-
