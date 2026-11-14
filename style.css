@@ -76,5 +76,56 @@ button:hover {
 
 .nav-container ul li a:hover {
   color: #ffffff;
+
+  /* Botão de duas linhas (Oculto no computador) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22px;
+  height: 14px;
+  padding: 0;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+/* Regras para Ecrãs Pequenos (Mobile) */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-container {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .nav-container ul.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(15, 45, 36, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 20px 0;
+    gap: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-container ul.nav-links.active {
+    display: flex;
+  }
 }
 
